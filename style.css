@@ -1,0 +1,58 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   width: 100%;
+   height: 100%;
+}
+.taskone{
+   margin: 20px auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 90%;
+}
+.content{
+   margin-bottom: 10px;
+}
+input[type="number"]{
+   color: blue;
+   padding: 3px;
+}
+.container{
+   width: 95vw;
+   height: 100%;
+   margin: 20px auto;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   padding: 10px 30px;
+   /* border: 1px solid #ccc; */
+   box-shadow: 0 0 6px 1px #ccc;
+}
+.container div{
+   width: 100%;
+   border-bottom: 1px solid rgba(0,0,0,0.099);
+   color: red;
+}
+.btn{
+   width: 90%;
+   margin:  20px auto;
+   text-align: center;
+}
+.btn button{
+   padding: 4px;
+   text-align: center;
+   margin-right: 20px;
+   transition: all .5s ease-in-out;
+   cursor: pointer;
+}
+.btn button:hover{
+   border: none;
+   box-shadow: 0 0 6px 1px #ccc;
+   padding: 4px;
+}
