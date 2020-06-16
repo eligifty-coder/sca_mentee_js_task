@@ -2,11 +2,11 @@ let container = document.querySelector('.container');
 document.query
 let firstInt = document.querySelector('.first');
 let secondInt = document.querySelector('.second');
-function taskOne(){
+const taskOne = ()=>{
    greaterThan(firstInt.value, secondInt.value);
    
 }
-function taskTwo(){
+const taskTwo =()=>{
    iterateData();
 }
 let greaterThan = (a,b)=>{
@@ -17,7 +17,8 @@ let greaterThan = (a,b)=>{
    }else{
       result= b
    }
-   container.innerHTML=`${result} is greater`;
+   // `The larger of ${num1}  and ${num2}  is  ${num1}`
+   container.innerHTML=` The larger of ${a}  and ${b} is ${result}`;
    firstInt.value ="";
    secondInt.value="";
    return result;
@@ -34,7 +35,7 @@ let iterateData = ()=>{
    }
 }
 
-function taskThree(){
+const taskThree =()=>{
    anotherLoop()
 }
 let anotherLoop = ()=>{
