@@ -1,7 +1,7 @@
-let container = document.querySelector('.container');
+const container = document.querySelector('.container');
 document.query
-let firstInt = document.querySelector('.first');
-let secondInt = document.querySelector('.second');
+const firstInt = document.querySelector('.first');
+const secondInt = document.querySelector('.second');
 const taskOne = ()=>{
    greaterThan(firstInt.value, secondInt.value);
    
@@ -9,9 +9,9 @@ const taskOne = ()=>{
 const taskTwo =()=>{
    iterateData();
 }
-let greaterThan = (a,b)=>{
+const greaterThan = (a,b)=>{
    let result;
-   let compareData= a>b;
+   const compareData= a>b;
    if(compareData){
       result=a;
    }else{
@@ -23,7 +23,7 @@ let greaterThan = (a,b)=>{
    secondInt.value="";
    return result;
 }
-let iterateData = ()=>{
+const iterateData = ()=>{
    let html=" ";
    for(let i=0;i<=20;i++){
       if(i%2==0){
@@ -38,7 +38,7 @@ let iterateData = ()=>{
 const taskThree =()=>{
    anotherLoop()
 }
-let anotherLoop = ()=>{
+const anotherLoop = ()=>{
    let html="";
    for(let i=0;i<=100;i++){
       if(i%3==0 && i%5==0){
